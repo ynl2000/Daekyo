@@ -19,11 +19,9 @@
 .topLayout .topLayoutIn nav ul li a:after { content:''; position:absolute; right:0; bottom:0; width:0; height:1px; transition:width .3s cubic-bezier(0.29, 0.18, 0.26, 0.83); background:#fff; }
 .topLayout .topLayoutIn nav ul li a:hover:before, .topLayout .topLayoutIn nav ul li a:hover:after { width:100%; left:0; }
 
-.topLayout .topLayoutIn .login_info {position:absolute;top: 12px;right:40px;font-size:18px;color:#fff;font-weight:600;}
-.topLayout .topLayoutIn .login_info .name {display:inline-block;vertical-align: top;margin: 10px 5px 0 0;}
-.topLayout .topLayoutIn .login_info a {display:inline-block;height:24px;vertical-align: top;margin: 9px 0 0 8px;}
+.topLayout .topLayoutIn .login_info { position:absolute; top:21px; right:40px; font-size:18px; color:#fff; font-weight:600; }
+.topLayout .topLayoutIn .login_info a { display:inline-block; height:24px; vertical-align:top; margin:0 0 0 8px; }
 .topLayout .topLayoutIn .login_info a img { position:relative; top:-2px; }
-
 /* EOD : topLayout */
 
 /* member_info */
@@ -38,13 +36,6 @@
 .member_info .members_num:before { content:''; position:absolute; top:-4px; left:0; width:29px; height:29px; background:url(../images/icon_members_num.png) no-repeat; }
 .member_info .btn_info { position:absolute; top:0px; right:32px; z-index:5; }
 /* EOD : member_info */
-
-/* error_info */
-
-.error_info {background: #fff;   padding: 10px 0;   border-bottom: 1px solid #ddd2bd;  min-height: 50px; line-height: 50px; text-align:center}
-.error_info span {display: inline-block;  font-size: 24px; color: #222;  font-weight: 600;}
-
-/* EOD : error_info */
 
 /* mainContent */
 .mainContent { background:#fdf8ee; }
@@ -121,10 +112,6 @@
 .progressList > li .select_box.wide_input { margin:0 0 0 10px; }
 .progressList > li:first-child .select_box.wide_input { margin:0; }
 
-.scoreBox {min-width:110px;}
-.scoreBox .txt_red.score {display:inline-block; min-width:45px; text-align:center;}
-
-
  /* chart */
  .chartWrap { padding:30px; }
  .chart { position:relative; height:100%; /* min-width:496px; */ }
@@ -137,12 +124,12 @@
  .chart .line li { border-top:1px solid #f0f0f0; }
  .chart .line li:first-child { border-top:none; }
  .chart .line li.last { border-top:none; }
- .chartBox { position:relative; background:#fff; letter-spacing:-1px; height:362px; border:2px solid #e4eaee; border-radius:10px; overflow-x:auto; overflow-y:hidden; }
- .chartBox.type02 { padding:0; border:none; height:362px; overflow-y:hidden; overflow-x:auto; border:2px solid #e4eaee; }
+ .chartBox { position:relative; background:#fff; letter-spacing:-1px; height:352px; border:2px solid #e4eaee; border-radius:10px; overflow-x:auto; overflow-y:hidden; }
+ .chartBox.type02 { padding:0; border:none; height:352px; overflow-y:hidden; overflow-x:auto; border:2px solid #e4eaee; }
  .chartBox.review { overflow-y:inherit; }
  .chartBox .chart_tit {position:absolute; top:0; height:100%; left:-17px; width:17px; font-size:13px; color:#222; border-right:1px solid #e5e5e5}
- .chart_legend { overflow:hidden; margin:0 0 10px}
- #p_circleChartGrid .chart_legend { margin:0 0 -10px 0; }
+ .chart_legend { overflow:hidden; }
+ #circleChartGrid .chart_legend { margin:0 0 -10px 0; }
  .chart_legend ul { float:right; }
  .chart_legend ul li { float:left; margin:0 0 0 15px; }
  .chart_legend ul li:first-child { margin:0; }
@@ -402,7 +389,7 @@
 	.pl_contentSub { border:2px solid #e4e9ed; border-radius:10px; padding:30px 20px; }
 	.pl_contentSub.type02 { margin:15px 0 0 0; }
 	#MultiChartGrid { padding-bottom:10px; }
-	.printBar .progress li .progressWrap .progressBox .data { color:#eb6262; font-weight:600; }
+	.printBar .progress li .progressWrap .progressBox .data { color:#eb6262 !important; font-weight:600; }
 	.printBar .progress li .progressWrap + .progressWrap .data { color:#212121 !important; }
 	.printBar .progress li .progressWrap + .progressWrap .data.rowData { color:#212121 !important; }
 
@@ -463,7 +450,7 @@
 	.ps_graphBox .ps_graphBox_bar span { position:absolute; right:20px; font-size:18px; }
 	.ps_graphBox .ps_graphBox_aver { position:absolute; bottom:-33px; left:-100%; margin:0 0 0 -50px; }
 	.ps_graphBox .ps_graphBox_aver:before { content:''; position:absolute; z-index:10; top:-88px; left:50%; width:2px; height:80px; border-left:3px dashed #eb6262; }
-	.ps_graph .ps_graph_R { display:table-cell; vertical-align:middle; padding:0 25px; width:280px; }
+	.ps_graph .ps_graph_R { display:table-cell; vertical-align:middle; padding:0 25px; width:220px; }
 	.txt_p_bullet.ps + .txt_p_bullet.ps { margin:5px 0 0 0; }
 	.txt_p_bullet.ps span { font-weight:600; padding:0 10px 0 0;}
 	.proChartTxt { color:#1f2020; font-weight:700; text-align:center; margin:-12px 0 0 0; padding:0 0 8px 0;}
@@ -471,24 +458,20 @@
 	.ps_graph_L .chart { height:inherit; margin:12px 0 0 0; }
 	.ps_content { position:relative; border:2px solid #e4e9ed; border-radius:20px; padding:30px 20px; }
 	.table_normal.mobChart { display:none; }
-	.table_normal.p_tab { height:362px; }
+	.table_normal.p_tab { height:356px; }
 	.table_normal.p_tab thead tr th { padding:0; height:57px; transition:none; }
-	.table_normal.p_tab tbody tr td { padding:0; height:36px; transition:none; }
+	.table_normal.p_tab tbody tr td { padding:0; height:57px; transition:none; }
 	.ps_subInfo { position:relative; z-index:1; display:table; width:100%; height:90px; overflow:hidden; margin:12px 0 0 0; border-radius:10px; text-align:center; }
-	.ps_subInfo .ps_subInfoBox { display:table-cell; vertical-align:middle;}
-	.ps_subInfo .ps_subInfoBox br {display:none}
+	.ps_subInfo .ps_subInfoBox { display:table-cell; vertical-align:middle; }
 	.ps_subInfo img { position:absolute; z-index:-1; top:0; left:0; width:100%; height:100%; }
 	.ps_content .eod_layout02 > li .eod_layoutIn { min-height:515px; margin:0 0 0 30px; }
 	#p_scoreChartGrid.chart.vertical .progress li .progressBox .data, #m_scoreChartGrid.chart.vertical .progress li .progressBox .data  { color:#212121; font-weight:600; }
 	.chart#p_scoreChartGrid { margin:25px 0 0 -20px; }
 	.print03_circle_chart .tooltip text { font-weight:600; }
-	#p_lineChartGrid { position:relative; bottom:inherit; /* margin-left:7.2mm; */ }
-	#m_lineChartGrid { position:absolute; bottom:-300px; left:3mm; width:78mm; }
+	#p_lineChartGrid { position:relative; bottom:inherit; margin-left:7.2mm; }
+	#m_lineChartGrid { position:absolute; bottom:-300px; left:7mm; width:71mm; }
 	#p_scoreChartGrid { position:relative; bottom:inherit; left:inherit; }
 	#m_scoreChartGrid { position:absolute; bottom:-300px; left:0; }
-	#p_circleChartGrid { }
-	#m_circleChartGrid { display:none}
-	
 	.table_normal.mobChart { display:none; }
 	.txt_p_bullet.ps { font-size:18px; }
 	/* EOD : 월간학습 성취도 분석 */
@@ -512,7 +495,7 @@
 		.pl_user { height:21mm; border-radius:3mm; }
 		.pl_user .pl_userL:after { width:1px; height:8mm; top:7mm; }
 		.pl_user .pl_userL p { font-size:14pt; margin:0 0 0 2mm; top:3px; }
-		.pl_user .pl_userL p span { font-size:11pt; color:#ff1e1e; top:-0.2mm; padding:0 0 0 6px; }
+		.pl_user .pl_userL p span { font-size:11pt; top:-0.2mm; padding:0 0 0 6px; }
 		.pl_user .pl_userC:after { width:1px; height:8mm; top:7mm; }
 		.pl_user .pl_userC p { font-size:15pt; }
 		.pl_user .pl_userR p { font-size:10pt; }
@@ -531,7 +514,7 @@
 		.icon_p_empty img { width:5mm; margin:0 0.6mm 0 0; }
 		.icon_p_time img { width:4.5mm; margin:0 0.1.1mm; }
 		.pl_info .pl_infoR .comment_L { width:20mm; }
-		.comment_txt { font-size:6pt; width:18mm; color:#ff1e1e; line-height:3.5mm; }
+		.comment_txt { font-size:6pt; width:18mm; line-height:3.5mm; }
 		.comment_txt img { width:18mm; margin:0; left:0.2mm; top:-2.5mm; }
 		.txt_p_bullet { font-size:8pt; padding:0 0 0 3mm; }
 		.txt_p_bullet img { width:1mm; border-radius:1mm; margin:0; top:1.25mm; }
@@ -575,8 +558,6 @@
 		.p_comple_data { font-size:8pt; }
 		.p_comple_data .p_comple_dataBox span { font-size:10pt; }
 		.p_comple_data .p_comple_dataBox img { width:9mm; margin:0 auto 1.25mm; }
-		
-		.p_learning_info {color:blue}
 
 		/* print 선택학습 */
 		.pd_choice { display:none; }
@@ -594,7 +575,7 @@
 		.chart.printBar .progress li .gubun { font-size:7pt; top:4.85mm; }
 		#MultiChartGrid, #soloChartGrid { display:none; }
 		#p_MultiChartGrid, #p_soloChartGrid { display:block; }
-		.printBar .progress li .progressWrap .progressBox .data { font-size:5pt !important; top:6mm; }
+		.printBar .progress li .progressWrap .progressBox .data { top:6mm; }
 
 		.p_learning_info03 { font-size:8pt; width:15mm; padding:0.75mm 2mm; }
 		.p_learning_info03 strong { font-size:9pt; }
@@ -618,11 +599,11 @@
 		.ps_graph_L .chart { margin:1.5mm 0 0 0; }
 		.ps_graphBox { height:13mm; }
 		.ps_graphBox .ps_graphBox_body { height:13mm; }
-		.ps_graphBox .ps_graphBox_bar span { font-size:10pt; color:#ff1e1e}
+		.ps_graphBox .ps_graphBox_bar span { font-size:10pt; }
 		.ps_graphBox .ps_graphBox_bar { line-height:13mm; }
 		.ps_graphBox .ps_graphBox_aver { font-size:8pt; margin:0 0 0 -10mm; bottom:-5mm; }
 		.ps_graphBox .ps_graphBox_aver:before { height:14mm; top:-15mm; }
-		.ps_graphBox .ps_graphBox_aver:before { border-left:2px dashed #ff1e1e }
+		.ps_graphBox .ps_graphBox_aver:before { border-left:2px dashed #eb6262 }
 		.ps_graph .ps_graph_R { width:45mm; padding:0 5mm; }
 		.ps_subInfo { font-size:8pt; height:15mm; margin:2.5mm 0 0 0; }
 		.printWrap .chart.line .gubunBox li { font-size:8pt; }
@@ -632,12 +613,9 @@
 		.printWrap .chart#lineChartGrid { margin:1mm -1mm 0 6mm; }
 		.ps_content .eod_layout02 > li .eod_layoutIn { min-height:242px; }
 		#p_lineChartGrid { position:absolute; bottom:-500px; left:0; }
-		#m_lineChartGrid { bottom:inherit; top:10mm; margin:0 0mm 0 2mm; }
+		#m_lineChartGrid { bottom:inherit; top:10mm; margin:0 0 0 4mm; }
 		#p_scoreChartGrid { position:absolute; bottom:-500px; left:0; }
-		#m_scoreChartGrid { bottom:inherit; top:10mm; margin:0 5mm 0 2mm; }
-		#p_circleChartGrid { display:none}
-	    #m_circleChartGrid {display:block; }
-				
+		#m_scoreChartGrid { bottom:inherit; top:10mm; margin:0 0 0 4mm; }
 
 		.ps_content .chartBox { height:220px; }
 		.ps_content .eod_layout02 { margin:0 0 0 -4mm; }
@@ -646,7 +624,7 @@
 		.ps_content #m_scoreChartGrid .mark { font-size:7pt !important; width:7mm; padding:0 1mm 0 0; }
 		.table_normal.pcChart { display:none; }
 		.table_normal.mobChart { display:table; height:224px; }
-		.table_normal.pd.mobChart tbody tr td { height:13px; }
+		.table_normal.pd.mobChart tbody tr td { height:20px; }
 
 		.ps_content { padding:0 4mm 3mm 4mm; }
 		#m_scoreChartGrid .progress li .progressWrap .progressBox .data { top:5mm; font-size:7pt !important; }
@@ -657,13 +635,6 @@
 		.ps_content .chartBox { overflow:hidden; }
 		.ps_content .chart.line .gubunBox { height:8mm; }
 		.txt_p_bullet.ps + .txt_p_bullet.ps { margin:0.25mm 0 0 0; }
-		
-		.ps_subInfo .ps_subInfoBox br {display:block}
-		.chart.pie {margin:5mm 0 0}
-		.chart.pie svg {width:800px; height:320px}
-		.print03_circle_chart .tooltip text {font-size:18pt}
-				
-		
 		/* EOD : print 월간학습 */
 
 		/* 레슨학습 방학호 */
@@ -675,12 +646,31 @@
 		.pl_content.type05 { padding:6mm 4mm 3.5mm 4mm; }
 		.pl_content.type05 { min-height:154mm; }
 		/* EOD : 레슨학습 방학호 */
-		
 
 	}
-	
 
 /* EOD : print */
+
+/* 리그 */
+.league_box { display:table; width:100%; table-layout:fixed; border:2px solid #e4eaee; padding:30px 0; border-radius:10px; overflow:hidden; }
+.league_box.type02 { border:none; padding:0; }
+.league_box.type02 .league_boxL { padding:0 30px 0 0; border-radius:inherit; overflow:inherit; }
+.league_box .league_boxL { display:table-cell; vertical-align:middle; padding:0 30px; width:48%; }
+.league_box .league_boxL .info { display:table; table-layout:fixed; width:100%; height:130px; margin:-10px 0 0 0; }
+.league_box .league_boxL .info .info_L { display:table-cell; vertical-align:middle; width:130px; padding:0 30px 0 0; }
+.league_box .league_boxL .info .info_L .icon { display:inline-block; width:130px; height:130px; background:#f1f4f6; border-radius:130px; text-align:center; }
+.league_box .league_boxL .info .info_L .icon img { position:relative; top:16px; left:5px; }
+.league_box .league_boxL .info .info_R { display:table-cell; vertical-align:middle; }
+.league_box .league_boxR { display:table-cell; vertical-align:middle; padding:0 40px 0 0; }
+.chartWrap.league { padding:0 0 20px 0; margin:0 0 0 25px; }
+.chart.line.league { margin:0 -10px 0 30px !important; }
+.chart.line.league .mark { position:absolute; left:-65px; width:50px; display:table; text-align:right; line-height:0.5; }
+.chart.line.league .mark li { display:table-row; }
+.chart.line.league svg { margin-bottom:-10px !important; }
+
+
+/* EOD : 리그 */
+
 
 /*
 @media only all and (max-width: 1199px){

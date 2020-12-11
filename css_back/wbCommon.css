@@ -211,11 +211,10 @@ strong { font-weight:600; }
 .mt5 { margin-top:5px !important; }
 .mt10 { margin-top:10px !important; }
 .mt20 { margin-top:20px !important; }
-.mb0 {margin-bottom:0 !important}
 .mb15 { margin-bottom:15px !important; }
-.ml2 {margin-left:2px !important}
 .bold { font-weight:700 !important; }
 .maxW { max-width:214px !important; }
+.ml10 { margin-left:10px !important; }
 .ft20 { font-size:20px; }
 .pd0 { padding:0 !important; }
 caption, .skip { width:0; height:0; margin:0; padding:0; font-size:0; text-indent:1000px; line-height:0; overflow:hidden; }
@@ -307,10 +306,10 @@ caption, .skip { width:0; height:0; margin:0; padding:0; font-size:0; text-inden
 	input[type="checkbox"] + label span { position:absolute; top:5px; left:0; width:24px; height:24px; background:#fff; border:3px solid #eee; border-radius:5px; transition:all 250ms cubic-bezier(.4,.0,.23,1); box-sizing:border-box; }
 	input[type="checkbox"]:disabled + label span { background:#eee; }
 	input[type="checkbox"] + label span:before { content:''; position:absolute; top:-3px; left:-8px; transform-origin:0 100%; -ms-transform-origin:0 100%; border-right:3px solid transparent; border-bottom:3px solid transparent; transform:rotate(45deg);  }
+	input[type="checkbox"]:checked + label:before { }
 	input[type="checkbox"]:checked + label span { border:12px solid #30af78; animation:shrink-bounce 200ms cubic-bezier(.4,.0,.23,1); }
 	input[type="checkbox"]:focus + label:before { outline:1px dotted #ccc; }
 	input[type="checkbox"]:checked + label span:before { animation:shrink-check 125ms 250ms cubic-bezier(.4,.0,.23,1) forwards; border-radius:2px; }
-	input[type="checkbox"].checked_gray:checked + label span { border:12px solid #989898;}
 
 	@media screen and (min-width:0\0){
 		input[type="checkbox"]:checked + label span:before { width:12px; height:11px; top:-6px; left:-7px; transform:rotate(0deg); background:url(../images/icon_chkbox_active.png) no-repeat; }
@@ -407,6 +406,7 @@ caption, .skip { width:0; height:0; margin:0; padding:0; font-size:0; text-inden
 	.wide_input textarea { width:100%; height:150px; resize:none; }
 	.select_box.wide_input { display:block; margin:0 2px 0 0; max-width:inherit; }
 	.wide_input.problem { margin:15px 10px 0 -5px;  }
+	.wide_input.problem input { border:none; padding:0 5px; }
 	.wide_input.problem textarea {font-weight:600; border:none; margin:-2px 0 0; padding:0 5px; height:auto}
 	/* EOD : wide_input */
 
@@ -423,7 +423,7 @@ caption, .skip { width:0; height:0; margin:0; padding:0; font-size:0; text-inden
 	.btn_green02_M:hover { border-bottom:4px solid #2eb671; }
 	.btn_blue_M { min-width:100px; height:30px; line-height:30px; padding:0 20px; background:#508ee2; color:#fff; border-bottom:4px solid #508ee2; transition:0.199s ease;}
 	.btn_blue_M:hover { border-bottom:4px solid #3f80d9; }
-	.btn_red_M { min-width:115px; height:30px; line-height:30px; padding:0 20px; background:#fd6565; color:#fff; border-bottom:4px solid #fd6565; transition:0.199s ease;}
+	.btn_red_M { min-width:100px; height:30px; line-height:30px; padding:0 20px; background:#fd6565; color:#fff; border-bottom:4px solid #fd6565; transition:0.199s ease;}
 	.btn_red_M:hover { border-bottom:4px solid #ed5656; }
 	.btn_black_S { min-width:70px; height:30px; line-height:30px; padding:0 10px; background:#606060; color:#fff; border-bottom:4px solid #606060; transition:0.199s ease; }
 	.btn_black_S:hover { border-bottom:4px solid #585353; }
@@ -534,7 +534,6 @@ caption, .skip { width:0; height:0; margin:0; padding:0; font-size:0; text-inden
 	.txt_reple:before { content:''; position:absolute; top:5px; left:0; width:8px; height:8px; background:url(../images/icon_reple.png) no-repeat; }
 	.txt_info { position:relative; margin:10px 0 0 0; min-height:26px; color:#fd6565; padding:3px 0 0 34px;}
 	.txt_info:before { content:''; position:absolute; top:0; left:0; width:26px; height:26px; background:url(../images/icon_txt_info.png) no-repeat; }
-	.txt_next {margin:0 0 0 20px; padding:0 0 0 19px}
 	.txt_bullet01 { position:relative; margin:10px 0 0 0; padding:0 0 0 10px; }
 	.txt_bullet01:before { content:''; position:absolute; top:10px; left:0; width:3px; height:3px; background:#333; }
 	.txt_bullet02 { position:relative; font-size:15px; margin:12px 0 0 0; padding:0 0 0 30px; }
@@ -575,6 +574,7 @@ caption, .skip { width:0; height:0; margin:0; padding:0; font-size:0; text-inden
 	.txt_gray01 { color:#666 !important; }
 	.txt_gray02 { color:#BCBCBC !important; }
 	.txt_red { color:#FD6565 !important; }
+	.txt_green { color:#3eca83 !important; }
 	.txt_blue { color:#508ee2 !important; }
 	.txt_red.score { margin:0 6px 0 0; font-weight:600; vertical-align:middle; }
 	.txt_brown { color:#554D40 !important; }
@@ -734,7 +734,7 @@ caption, .skip { width:0; height:0; margin:0; padding:0; font-size:0; text-inden
 
 	/* table_notice */
 	.table_brdN {width: 100%;  border:2px solid #e4eaee; border-spacing: 0; /* border-collapse: collapse; */ overflow:hidden; border-radius:10px;  }
-	.table_brdN thead tr th { background:#f1f4f6; border-bottom:2px solid #e4eaee; color: #666; font-weight:600; padding:15px 8px; text-align:center; white-space:nowrap}
+	.table_brdN thead tr th { background:#f1f4f6; border-bottom:2px solid #e4eaee; color: #666; font-weight:600; padding:15px 8px; text-align:center; }
 	.table_brdN thead tr th.sorting { padding:15px 15px 15px 5px; }
 	.table_brdN thead tr th:first-child { border-left:none; }
 	.table_brdN tbody tr th { padding:15px 10px; background:#f1f4f6; color:#666; border-top:2px solid #e4eaee; border-right:2px solid #e4eaee; font-weight:500; }
@@ -744,7 +744,6 @@ caption, .skip { width:0; height:0; margin:0; padding:0; font-size:0; text-inden
 	.table_brdN tbody tr:first-child td { border-top:none; }
 	.table_brdN tbody tr td img { max-width:100%; }
 	.table_brdN .brdN { border-left:none !important; }
-	.table_brdN tbody tr.no_line td {border-top:0}
 
 	.table_brdN tr.active { background:#f0fff7; }
 	.table_brdN tr.active td { font-weight:600 !important; }
@@ -752,7 +751,7 @@ caption, .skip { width:0; height:0; margin:0; padding:0; font-size:0; text-inden
 
 	.table_normal.chart_table { border:none; height:356px; }
 	.table_normal.chart_table thead tr th { padding:0 8px; height:57px; transition:none; }
-	.table_normal.chart_table tbody tr td { padding:0 8px; height:36px; transition:none; }
+	.table_normal.chart_table tbody tr td { padding:0 8px; height:57px; transition:none; }
 	/* EOD : table_notice */
 	.popup_wrap .table_brdN {  }
 	.popup_wrap .table_brdN tbody tr th { padding:10px; }
@@ -814,20 +813,6 @@ caption, .skip { width:0; height:0; margin:0; padding:0; font-size:0; text-inden
 .searchBox .searchBoxIn { position:relative; float:right; }
 .searchBox .searchBoxIn input { margin:0; width:100%; max-width:200px; padding:0 42px 0 10px; height:35px; line-height:35px; font-weight:500; }
 .searchBox .searchBoxIn button { position:absolute; top:0; right:0; width:45px; height:35px; background:url(../images/icon_search.png) no-repeat 50% 50%; }
-
-
-/* 출력용 css */
-@media print{
-
-	.txt_red , .p_txt_red  {color:#ff1e1e !important}
-	.txt_blue , .p_txt_blue  {color:blue !important}
-	
-	.printBar .progress li .progressWrap .progressBox .data , .p_learning_info03 strong , .p_learning_info04 strong {color:#ff1e1e !important}
-	
-	
-}
-/* 출력용 css */
-
 
 /*
 @media (max-width: 1199px) {
