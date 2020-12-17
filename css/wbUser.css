@@ -137,8 +137,8 @@
  .chart .line li { border-top:1px solid #f0f0f0; }
  .chart .line li:first-child { border-top:none; }
  .chart .line li.last { border-top:none; }
- .chartBox { position:relative; background:#fff; letter-spacing:-1px; height:362px; border:2px solid #e4eaee; border-radius:10px; overflow-x:auto; overflow-y:hidden; }
- .chartBox.type02 { padding:0; border:none; height:362px; overflow-y:hidden; overflow-x:auto; border:2px solid #e4eaee; }
+ .chartBox { position:relative; background:#fff; letter-spacing:-1px; height:362px; border:2px solid #bcbcbc; border-radius:10px; overflow-x:auto; overflow-y:hidden; }
+ .chartBox.type02 { padding:0; border:none; height:362px; overflow-y:hidden; overflow-x:auto; border:2px solid #bcbcbc; }
  .chartBox.review { overflow-y:inherit; }
  .chartBox .chart_tit {position:absolute; top:0; height:100%; left:-17px; width:17px; font-size:13px; color:#222; border-right:1px solid #e5e5e5}
  .chart_legend { overflow:hidden; margin:0 0 10px}
@@ -289,15 +289,28 @@
 	.pl_user .pl_userL p { position:relative; top:7px; display:inline-block; font-size:29px; font-weight:700; line-height:1; margin:0 0 0 25px; }
 	.pl_user .pl_userL p span { position:relative; top:-2px; font-weight:600; font-size:21px; color:#eb6262; padding:0 0 0 12px; }
 	.pl_user .pl_userC { position:relative; display:table-cell; vertical-align:middle; }
-	.pl_user .pl_userC p { font-size:29px; margin:0; font-weight:700; }
+	.pl_user .pl_userC { font-size:29px; margin:0; font-weight:700; }
+	.pl_user .pl_userC .tit { font-size:29px; margin:0; font-weight:700; }
 	.pl_user .pl_userC:after { content:url("../images/icon_pl_user_list.png"); position:absolute; top:41px; right:0; width:2px; height:45px; overflow:hidden; }
-	.pl_user .pl_userR img { position:absolute; z-index:-1; top:0; left:0; width:100%; height:100%; }
+	.pl_user .pl_userC .pl_userR_txt { display:inline-block; margin:5px auto 0; text-align:left; }
+	.pl_user .pl_userC .pl_userR_txt p { margin:0; font-size:18px; color:#666; font-weight:500;}
+	.pl_user .pl_userC .pl_userR_txt p strong { color:#323333; font-weight:600; padding:0 10px 0 0; }
 	.pl_user .pl_userR { display:table-cell; vertical-align:middle; }
+	.pl_user .pl_userR > img { position:absolute; z-index:-1; top:0; left:0; width:100%; height:100%; }
 	.pl_user .pl_userR .pl_userR_txt { display:inline-block; margin:0 auto; text-align:left; }
 	.pl_user .pl_userR p { margin:0; font-size:21px; color:#666; }
 	.pl_user .pl_userR p strong { color:#323333; font-weight:600; padding:0 10px 0 0; }
 
-	.print_tit02 { position:relative; z-index:1; border-radius:15px; overflow:hidden; color:#212121; text-align:center; font-size:24px; padding:15px 0; font-weight:600; margin:12px 0 30px 0; }
+	.pl_user .pl_userR .info { display:inline-block; }
+	.pl_user .pl_userR .info_L { display:inline-block; vertical-align:middle; width:110px; padding:0 15px 0 0; }
+	.pl_user .pl_userR .info_R { display:inline-block; vertical-align:middle; text-align: left; }
+	.pl_user .pl_userR .info_R .txt01 { font-size:16.6px; color:#1f2020; margin:0; font-weight:600; line-height:1.2; }
+	.pl_user .pl_userR .info_R .txt01 + .txt01 { margin:0 0 5px 0; }
+	.pl_user .pl_userR .info_R .txt01 span { font-size:20px; }
+	.pl_user .pl_userR .info_R .txt02 { position:relative; top:6px; font-size:19px; font-weight:600; vertical-align:top; }
+
+
+	.print_tit02 { position:relative; z-index:1; border-radius:15px; overflow:hidden; color:#212121; text-align:center; font-size:24px; padding:15px 0; font-weight:600; margin:12px 0 5px 0; }
 	.print_tit02 img { position:absolute; z-index:-1; top:0; left:0; width:100%; height:100%; }
 	.print_tit03 { position:relative; z-index:1; border-radius:15px 15px 0 0; overflow:hidden; color:#212121; text-align:center; font-size:22px; padding:10px 0; margin:5px 0 0 0; font-weight:600; }
 	.print_tit03 img { position:absolute; z-index:-1; top:0; left:0; width:100%; height:100%; }
@@ -307,14 +320,17 @@
 	.p_learning_info02:after { content:url('../images/icon_p_green01.png'); position:absolute; top:0; left:0; width:100%; height:100%; z-index:-1; }
 
 	.table_normal.pl { border-radius:0 0 10px 10px; overflow:inherit; border-top:none; }
-	.table_normal.pl.type02 { border-radius:10px; overflow:hidden; border-top:2px solid #e4eaee; }
+	.table_normal.pl.type02 { border-radius:10px; overflow:hidden; border-top:2px solid #bcbcbc; }
+	.table_normal.pl.type03 { border-radius:10px; overflow:hidden; border-top:2px solid #bcbcbc; margin:10px 0}
 	.table_normal.pl thead tr th { position:relative; z-index:1; padding:12px 10px; transition:none; overflow:hidden; }
 	.table_normal.pl thead tr th:after { content:url('../images/icon_p_table_bg.png'); position:absolute; top:0; left:0; width:100%; height:100%; z-index:-1; }
 	.table_normal.pl tbody tr td { padding:12px 10px; color:#323333; height:23px; transition:none; }
 	.table_normal.pl tbody tr.active td { position:relative; z-index:1; }
 	.table_normal.pl tbody tr.active td:after { content:url('../images/icon_p_learn_active.png'); position:absolute; top:0; left:0; width:100%; bottom:0; overflow:hidden; z-index:-1;  }
+	.table_normal.pl.type03 thead tr th {padding:7px 30px; border-left:0}
+	.table_normal.pl.type03 tbody tr td {padding:7px 30px; border-left:0}
 
-	.table_normal.pl tbody tr.active td .learning_info { position:absolute; top:-2px; left:-94px; height:100%; width:90px; border:2px solid #e4eaee; }
+	.table_normal.pl tbody tr.active td .learning_info { position:absolute; top:-2px; left:-94px; height:100%; width:90px; border:2px solid #bcbcbc; }
 	.table_normal.pl tbody tr.active td .learning_info .p_learning_info { position:relative; top:9px; }
 	.table_answer01 { vertical-align:middle; width:16px; }
 	.table_answer02 { vertical-align:middle; width:17px; }
@@ -332,14 +348,18 @@
 	.btn_black_S.print img { position:absolute; width:100%; height:100%; left:0; top:0; z-index:-1; }
 	.p_txt_box { overflow:hidden; }
 	.p_txt_box .p_tit { font-size:29px; font-weight:600; letter-spacing:-1.5px; float:left; margin:0; position:relative; top:5px; }
+	.p_txt_box .p_tit_small { font-size:22px; font-weight:600; letter-spacing:-1.5px; float:left; margin:0; position:relative; top:5px; }
 	.p_txt_box .p_txt { float:right; }
 	.p_txt_box .p_txt p { margin:0; }
 	.p_txt_box.type02 .p_tit { top:0; }
 	.p_txt_box.type02 .p_txt .txt_gray01 { display:inline-block; position:relative; top:16px; }
 	.p_txt_box.type02 .p_txt .txt_gray01 + .txt_gray01 { padding:0 0 0 8px; }
 	.p_txt_box.type03 { margin:35px 0 0 0; }
-	.p_txt_stars { font-size:20px; font-weight:600; margin:0; }
+	.p_txt_stars { font-size:20px; font-weight:600; margin:0; line-height: 1;}
+	.p_txt_stars p {margin:0}
 	.p_txt_stars img { width:24px; position:relative; top:-8px; left:3px; }
+	.p_txt_stars.veti {margin: 10px 0 0;}
+	.p_txt_stars.veti img {top: 0;margin: 0 0 0 25%;}
 	.pl_last_txt { text-align:center; color:#666; margin:7px 0 0 0; }
 
 	.pl_info { display:table; table-layout:fixed; width:100%; }
@@ -356,7 +376,7 @@
 	.pl_info .pl_infoR .comment_L { position:relative; z-index:1; display:table-cell; vertical-align:middle; width:160px; }
 	.pl_info .pl_infoR .comment_R { display:table-cell; vertical-align:middle; padding:0 0 0 10px; }
 
-	.pl_content { position:relative; margin:30px 0 0 0; border:2px solid #e4e9ed; border-radius:20px; padding:30px 20px;  min-height:927px;}
+	.pl_content { position:relative; margin:10px 0 0 0; border:2px solid #bcbcbc; border-radius:20px; padding:30px 20px;  min-height:927px;}
 	.pl_content .p_learn_label { position:absolute; z-index:1; top:-13px; right:20px; padding:2px 30px 3px 30px; border-radius:100%; font-size:15px; }
 	.pl_content .p_learn_label ul { overflow:hidden; }
 	.pl_content .p_learn_label li { float:left; margin:0 0 0 10px; }
@@ -366,6 +386,10 @@
 	.pl_content .p_learn_label li:first-child { margin:0; }
 	.pl_content .p_learn_label img { position:absolute; z-index:-1; top:0; left:0; right:0; height:100%; width:100%; border-radius:10px; }
 
+	.pl_contentBox {display: table;width: 100%;}
+	.pl_content_L {display: table-cell; vertical-align: top; }
+	.pl_content_R {display: table-cell; vertical-align: top; width:20%; padding: 0 0 0 40px; }
+
 	.p_learn { display:table; table-layout:fixed; width:100%; }
 	.p_learn .p_learn_L { display:table-cell; width:33.3334%; }
 	.p_learn .p_learn_R { display:table-cell; padding:0 0 0 90px; }
@@ -374,12 +398,14 @@
 	.p_learnBox .p_learnBox_L { position:relative; display:table-cell; height:1px; }
 	.p_learnBox .p_learnBox_R { display:table-cell; padding:10px 0 0 15px; vertical-align:top; }
 
-	.pl_footer { margin:15px 0 0 0; border:2px solid #e4e9ed; border-radius:10px; padding:20px; }
+	.pl_footer { margin:15px 0 0 0; border:2px solid #bcbcbc; border-radius:10px; padding:20px; }
 	.pl_footerBox { display:table; table-layout:fixed; width:100%;  }
 	.pl_footerBox .pl_footerBoxL { display:table-cell; vertical-align:top; width:100px; padding:0 10px 0 0; }
 	.pl_footerBox .pl_footerBoxR { display:table-cell; vertical-align:top; font-size:18px; }
 	.pl_footerBox .pl_footerBoxR .txt_default { margin:3px 0 0 0; }
 	.pl_footerBox .pl_footerBoxR .txt_default:first-child { margin:0; }
+
+	.divi_footer {margin:15px 0 0}
 
 	.p_comple_data { display:table; width:100%; table-layout:fixed; font-weight:600; text-align:center; font-size:18px; height:100%; border:2px solid #e4eaee; border-radius:0 0 10px 10px; border-top:none; }
 	.p_comple_data .p_comple_dataBox { display:table-cell; vertical-align:middle; }
@@ -426,7 +452,7 @@
 	.p_legend.type02 ul li:first-child { margin:0; }
 
 	.pd_table { margin:5px 0 0 0; }
-	.p_layoutBox { border:2px solid #e4e9ed; border-radius:10px; overflow:hidden; }
+	.p_layoutBox { border:2px solid #bcbcbc; border-radius:10px; overflow:hidden; }
 	.p_layoutBox.type02 { padding:15px 15px 0 15px; }
 
 	.pd_chartBox { display:table; table-layout:fixed; width:100%; margin:35px 0 0 0; }
@@ -437,12 +463,12 @@
 	.pd_table .pd_tableL { display:table-cell; vertical-align:top; }
 	.pd_table .pd_tableR { display:table-cell; vertical-align:top; }
 	.table_normal.tabs { border:none; border-radius:0; }
-	.pd_tableR .table_normal.tabs thead tr th { border-left:2px solid #e4eaee; }
-	.pd_tableR .table_normal.tabs tbody tr td { border-left:2px solid #f1f4f6; }
+	.pd_tableR .table_normal.tabs thead tr th { border-left:2px solid #bcbcbc; }
+	.pd_tableR .table_normal.tabs tbody tr td { border-left:2px solid #bcbcbc; }
 	.table_normal.tabs thead tr th { padding:0 10px; height:49px; position:relative; z-index:1; overflow:hidden; }
 	.table_normal.tabs thead tr th:after { content:url('../images/icon_p_table_bg.png'); position:absolute; top:0; left:0; width:100%; height:100%; z-index:-1; }
 	.table_normal.tabs tbody tr td { padding:0 10px; height:30px; }
-	.table_normal.tabs tbody tr td.bl { border-left:2px solid #f1f4f6; }
+	.table_normal.tabs tbody tr td.bl { border-left:2px solid #bcbcbc; }
 	.table_normal.tabs .tabs_num { font-size:15px; }
 	.table_normal.tabs .blN { border-left:none !important; }
 	#soloChartGrid .line { border:none; border-top:1px solid #f0f0f0; }
@@ -469,7 +495,8 @@
 	.proChartTxt { color:#1f2020; font-weight:700; text-align:center; margin:-12px 0 0 0; padding:0 0 8px 0;}
 	.proChartTxt span { font-size:21px; }
 	.ps_graph_L .chart { height:inherit; margin:12px 0 0 0; }
-	.ps_content { position:relative; border:2px solid #e4e9ed; border-radius:20px; padding:30px 20px; }
+	.ps_content { position:relative; border:2px solid #bdbdbd; border-radius:20px; padding:30px 20px; }
+	.ps_content.type02 {margin:30px 0 0}
 	.table_normal.mobChart { display:none; }
 	.table_normal.p_tab { height:362px; }
 	.table_normal.p_tab thead tr th { padding:0; height:57px; transition:none; }
@@ -500,6 +527,22 @@
 	.p_learn.type02 .p_learn_R { padding:0 0 0 30px; }
 	/* EOD : 레슨학습 방학호 */
 
+	/* 받아쓰기 */
+
+	.sheet {border:2px solid #e4eaee; margin:40px 0 0; font-size: 16px;}
+	.sheet > li {position:relative; border-top:2px solid #f1f4f6}
+	.sheet > li:first-child {border-top:0}
+	.sheet > li.ok:before {content:""; position:absolute; top:5px; left:10px; display:inline-block; width:69px; height:70px; background:url("../images/answer_ok.png")}
+	.sheet > li.no:before {content:""; position:absolute; top:4px; left:10px; display:inline-block; width:56px; height:53px; background:url("../images/answer_no.png")}
+	.sheet_q {background: #f0fff7; display:table; width: 100%;}
+	.sheet_q .num {display: table-cell; width:106px; vertical-align:middle; text-align:center; padding:17px 0}
+	.sheet_q .question {display: table-cell; vertical-align:middle; padding:17px 0}
+	.sheet_a {background: white; display:table; width: 100%;}
+	.sheet_a .label {display: table-cell; width:106px; vertical-align:middle; text-align:center; padding:13px 0}
+	.sheet_a .answer {display: table-cell; vertical-align:middle; padding:13px 0; font-weight: 600;}
+
+	/* EOD : 받아쓰기 */
+
 	/* @media only all and (max-width: 760px){ */
 	@media print {
 		.printWrap { size:a4; padding:10mm; width:190mm; height:277mm; letter-spacing:-0.05mm; }
@@ -515,12 +558,19 @@
 		.pl_user .pl_userL p span { font-size:11pt; color:#ff1e1e; top:-0.2mm; padding:0 0 0 6px; }
 		.pl_user .pl_userC:after { width:1px; height:8mm; top:7mm; }
 		.pl_user .pl_userC p { font-size:15pt; }
+		.pl_user .pl_userC .tit {font-size:12pt}
+		.pl_user .pl_userC .pl_userR_txt p {font-size:10pt}
 		.pl_user .pl_userR p { font-size:10pt; }
 		.pl_user .pl_userR p strong { padding:0 1.75mm 0 0; }
-		.print_tit02 { font-size:12pt; margin:2.5mm 0 6mm 0; padding:2.1mm 0; border-radius:2mm; }
+		.pl_user .pl_userR .info_R .txt01 {font-size:9pt}
+		.pl_user .pl_userR .info_R .txt01 span {font-size:10pt}
+		.pl_user .pl_userR .info_L { width:18mm; padding:0 2.5mm 0 0; }
+		.pl_user .pl_userR .info_L svg  { height:18mm; }
+		.print_tit02 { font-size:12pt; margin:2.5mm 0 1mm 0; padding:2.1mm 0; border-radius:2mm; }
 		.pl_info .pl_infoL { width:40%; padding:0 0 0 8mm; }
-		.pl_info .pl_infoL .info_L { width:23mm; padding:0 2.5mm 0 0; }
-		.pl_info .pl_infoL .info_L svg { height:23mm; }
+		.pl_info .pl_infoL .info_L { width:21mm; padding:0 2.5mm 0 0; }
+		.pl_info .pl_infoL .info_L svg { height:21mm; }
+
 		.pl_info .pl_infoL .info_R .txt01 { font-size:8pt; }
 		.pl_info .pl_infoL .info_R .txt01 + .txt01 { margin:0.65mm 0 1mm 0; }
 		.pl_info .pl_infoL .info_R .txt01 span { font-size:10pt; }
@@ -537,12 +587,13 @@
 		.txt_p_bullet img { width:1mm; border-radius:1mm; margin:0; top:1.25mm; }
 		.txt_p_bullet + .txt_p_bullet { margin:0.75mm 0 0 0; }
 
-		.pl_content { padding:3mm 4mm; margin:4mm 0 0 0; min-height:147mm; }
+		.pl_content { padding:1mm 4mm; margin:0.5mm 0 0 0; min-height:auto; }
 		.pl_content .p_learn_label { right:4.5mm; padding:0.6mm 4mm 0.6mm 4mm; font-size:6pt; top:-2.5mm; }
 		.pl_content .p_learn_label li img { width:2.3mm; margin:0 0.75mm 0 0; }
 		.pl_content .p_learn_label li:nth-child(2) img { width:2.5mm; margin:-0.25mm 0.75mm 0 0; }
 		.pl_content .p_learn_label li:nth-child(3) img { width:2mm; margin:-0.3mm 0.75mm 0 0; }
-		.p_txt_box .p_tit { font-size:14pt; top:1.75mm; }
+		.p_txt_box .p_tit { font-size:13pt; top:1mm; }
+		.p_txt_box .p_tit_small {font-size: 12pt; top:0}
 		.p_txt_box .p_txt { font-size:8pt; position:relative; top:0; }
 		.p_txt_box.type02 .p_tit { top:1.2mm; }
 		.p_txt_box.type02 .p_txt .txt_gray01 { top:3.5mm; }
@@ -553,8 +604,8 @@
 		.p_learning_info { width:12mm; font-size:7pt; padding:0.5mm 0; }
 		.p_learning_info02 { width:12mm; font-size:7pt; padding:0.5mm 0; }
 
-		.table_normal.pl thead tr th { font-size:8pt; padding:1.6mm 0.5mm; height:4.5mm; }
-		.table_normal.pl tbody tr td { font-size:8pt; padding:1.6mm 0.5mm; height:4.5mm; }
+		.table_normal.pl thead tr th { font-size:8pt; padding:0.5mm 0.5mm; height:4.5mm; }
+		.table_normal.pl tbody tr td { font-size:8pt; padding:0.5mm 0.5mm; height:4.5mm; }
 		.table_answer01 { width:2.75mm; }
 		.table_answer02 { width:2.9mm; }
 		.table_answer03 { width:2.5mm; }
@@ -564,19 +615,21 @@
 		.p_txt_box.type03 { margin:5mm 0 0 0; }
 
 		.table_normal.pl.type02 { margin-top:0.75mm !important; }
-		.table_normal.pl tbody tr.active td .learning_info { width:13mm; left:-14mm; border:0.5mm solid #e4eaee; }
+		.table_normal.pl tbody tr.active td .learning_info { width:13mm; left:-14mm;}
 		.table_normal.pl tbody tr.active td .learning_info .p_learning_info { top:1.25mm; }
+		.table_normal.pl.type03 {margin:1.5mm 0 1mm !important}
 
 		.pl_footer { padding:3mm 3.5mm 3mm 3.5mm; margin:2.5mm 0 0 0; }
 		.pl_footerBox .pl_footerBoxL { width:19mm; padding:0 1mm 0 0; }
-		.pl_footerBox .pl_footerBoxR .txt_default { font-size:10pt; margin:0; }
-		.pl_footerBox .pl_footerBoxR .txt_default {  }
+		.pl_footerBox .pl_footerBoxR .txt_default { font-size:8pt; margin:0; }
 
 		.p_comple_data { font-size:8pt; }
 		.p_comple_data .p_comple_dataBox span { font-size:10pt; }
 		.p_comple_data .p_comple_dataBox img { width:9mm; margin:0 auto 1.25mm; }
 		
 		.p_learning_info {color:blue}
+
+		.pl_content_R {padding:0 0 0 5mm}
 
 		/* print 선택학습 */
 		.pd_choice { display:none; }
@@ -585,6 +638,8 @@
 		.table_normal.pd tbody tr td.pd_tit { padding:0 4mm; }
 		.table_normal.tabs thead tr th { font-size:8pt; padding:1.25mm 0.5mm; height:4.5mm; }
 		.table_normal.tabs tbody tr td { font-size:8pt; padding:1mm 0.5mm; height:3.4mm; }
+		.table_normal.pl.type03 thead tr th , .table_normal.pl.type03 tbody tr td {padding:0.5mm 2.5mm;}
+		.table_normal.pl tbody tr.active td .learning_info .p_learning_info {top:1mm}
 		.p_txt_stars02 { font-size:12pt; margin:6mm 0 1.25mm 0; }
 		.p_txt_stars02 img { width:5.5mm; margin:0 1.25mm 0 0; top:0.9mm; }
 		.pl_contentSub { padding:4mm 4mm 6.5mm 4mm; margin:1.5mm 0 0 0; }
@@ -642,7 +697,7 @@
 		.ps_content .chartBox { height:220px; }
 		.ps_content .eod_layout02 { margin:0 0 0 -4mm; }
 		.ps_content .eod_layout02 > li .eod_layoutIn { margin:0 0 0 4mm; }
-		.ps_content .chart.pie svg { width:285px; height:180px; margin:-9mm auto 0; }
+		.ps_content .chart.pie svg { width:285px; height:180px; margin:-12mm auto 0; }
 		.ps_content #m_scoreChartGrid .mark { font-size:7pt !important; width:7mm; padding:0 1mm 0 0; }
 		.table_normal.pcChart { display:none; }
 		.table_normal.mobChart { display:table; height:224px; }
@@ -673,9 +728,12 @@
 		.p_learn.type02 .p_learn_R { padding:0 0 0 5.5mm; }
 		.pl_info.type02 .pl_infoL .info_L svg {  }
 		.pl_content.type05 { padding:6mm 4mm 3.5mm 4mm; }
-		.pl_content.type05 { min-height:154mm; }
+		.pl_content.type05 { min-height:90mm; }
 		/* EOD : 레슨학습 방학호 */
 		
+		.table_normal.pl tbody tr.active td .learning_info .p_learning_info {top:0.2mm}
+		.table_normal.pl tbody tr.active td .learning_info .p_learning_info:after {top:0}
+		.p_txt_stars.veti {margin:2mm 0 0}
 
 	}
 	

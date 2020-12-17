@@ -52,81 +52,56 @@
 					<p>김대교<span>3레벨</span></p>
 				</div>
 				<div class="pl_userC">
-					<p>2020년 5월</p>
-				</div>
-				<div class="pl_userR">
-					<img src="../images/icon_pl_user_bg.png">
+					<p class="tit">2020년 5월</p>
 					<div class="pl_userR_txt">
 						<p><strong>출력일</strong>2020.05.18</p>
 						<p><strong>담당교사</strong>이대교</p>
 					</div>
 				</div>
-			</div>
-		</section>
-
-		<section class="ps_graph">
-			<div class="ps_graph_L">
-				<div class="chart" id="proChartGrid">
-					<ul class="progress">
-						<li>
-							<div class="progressWrap">
-								<div class="progressBox">
-									<div class="data">80</div>
-									<div class="bar"><span class="txt">나의 점수</span></div>
-								</div>
+				<!-- pl_userR -->
+				<div class="pl_userR">	
+					<div class="info">
+						<div class="info_L">
+							<div class="chart" id="proChartGrid">
+								<ul class="progress">
+									<li>
+										<div class="progressWrap">
+											<div class="progressBox">
+												<div class="data">80</div>
+												<div class="bar"><span class="txt">나의 점수</span></div>
+											</div>
+										</div>
+									</li>
+								</ul>
 							</div>
-						</li>
-					</ul>
+							<script>
+								$(function(){
+									$("#proChartGrid").chart({
+										type : 'progress', // horizontal, vertical, multiBar, progress
+										width : 21,
+										height : 21,
+										fill : ["#eb6262"],
+										stroke : ["#f1f4f5"],
+										strokeWidth : 4,
+										animation : "false",
+									});
+								});
+								$(window).load(function(){
+									$(".circleReval").attr("class","circleReval active");
+								});
+							</script>		
+						</div>
+						<div class="info_R">
+							<p class="txt01">전체 평균 <span>26</span>점</p>
+						</div>
+					</div>
+					<img src="../images/icon_pl_user_bg.png"/>				
 				</div>
-				<div class="proChartTxt">상위 <span>10</span>%</div>
-				<script>
-					$(function(){
-						$("#proChartGrid").chart({
-							type : 'progress', // horizontal, vertical, multiBar, progress
-							width : 21,
-							height : 21,
-							fill : ["#eb6262"],
-							stroke : ["#dedede"],
-							strokeWidth : 4,
-							animation : "false",
-						});
-					});
-					$(window).load(function(){
-						$(".circleReval").attr("class","circleReval active");
-					});
-				</script>
+				<!-- EOD : pl_userR -->
 			</div>
-			<div class="ps_graph_C">
-				<div class="ps_graphBox">
-					<div class="ps_graphBox_body"><img src="../images/icon_p_table_bg.png"/></div>
-					<div class="ps_graphBox_bar"><img src="../images/icon_pl_title_bg.png"><span>80점</span></div>
-					<div class="ps_graphBox_aver">전체 평균 85점</div>
-				</div>
-			</div>
-			<div class="ps_graph_R">
-				<p class="txt_p_bullet ps"><img src="../images/icon_p_bullet.png"><span>학습 레슨</span><strong class="txt_red">00</strong>레슨 ~ <strong class="txt_red">00</strong>레슨</p>
-				<p class="txt_p_bullet ps"><img src="../images/icon_p_bullet.png"><span>총 학습 시간</span><strong class="txt_red">238</strong>분</p>
-			</div>
-			<script>
-				$(function(){
-					scoreN = $(".ps_graphBox span").html().replace(/[^0-9]/g,'');
-					averN = $(".ps_graphBox_aver").html().replace(/[^0-9]/g,'');
-					$(".ps_graphBox_bar").css("width",scoreN + "%");
-					$(".ps_graphBox_aver").css("left",averN + "%");
-
-					scoreW = $(".ps_graphBox_bar").outerWidth();
-					if(scoreN == "100"){
-						$(".ps_graphBox_bar img").css("border-radius","2.25mm");
-					}else if( scoreW < 60 ){
-						$(".ps_graphBox .ps_graphBox_bar span").css("right","-9mm");
-					}
-					console.log(scoreW);
-				});
-			</script>
 		</section>
 
-
-		<section class="ps_content">
+		<section class="ps_content type02">
 			<!-- eod_layout02 -->
 			<ul class="eod_layout02">
 				<li>
