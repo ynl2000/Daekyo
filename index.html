@@ -205,107 +205,107 @@
 			<!-- EOD : visit_board -->
 
 			<!-- layout_box -->
-				<section class="layout_box mt20">
-					<!-- maxScrollBox -->
-					<div class="maxScrollBox">
-						<!-- maxScrollBoxIn -->
-						<div class="maxScrollBoxIn">
+			<section class="layout_box mt20">
+				<!-- maxScrollBox -->
+				<div class="maxScrollBox">
+					<!-- maxScrollBoxIn -->
+					<div class="maxScrollBoxIn">
 
-							<table class="table_brdN">
-								<caption>이름, 회원번호, 학년, 방문요일, 최근학습, 학습완료일, 학습시간, 점수, 학습결과서, 리셋, 리셋이력, 상세이력으로 구성된 전체회원 리스트 상세</caption>
-								<colgroup>
-									<col width="8%"/>
-									<col width="*"/>
-									<col width="5%"/>
-									<col width="8%"/>
-									<col width="10%"/>
-									<col width="9%"/>
-									<col width="8%"/>
-									<col width="5%"/>
-									<col width="11%"/>
-									<col width="4%"/>
-									<col width="7.5%"/>
-									<col width="10.5%"/>
-								</colgroup>
-								<thead>
+						<table class="table_brdN">
+							<caption>이름, 회원번호, 학년, 방문요일, 최근학습, 학습완료일, 학습시간, 점수, 학습결과서, 리셋, 리셋이력, 상세이력으로 구성된 전체회원 리스트 상세</caption>
+							<colgroup>
+								<col width="8%"/>
+								<col width="*"/>
+								<col width="5%"/>
+								<col width="8%"/>
+								<col width="10%"/>
+								<col width="9%"/>
+								<col width="8%"/>
+								<col width="5%"/>
+								<col width="11%"/>
+								<col width="4%"/>
+								<col width="7.5%"/>
+								<col width="10.5%"/>
+							</colgroup>
+							<thead>
+								<tr>
+									<th class="sorting">이름</th>
+									<th class="sorting active">회원번호</th>
+									<th class="sorting">학년</th>
+									<th>방문요일</th>
+									<th class="sorting">최근학습</th>
+									<th>학습완료일</th>
+									<th>학습시간</th>
+									<th>점수</th>
+									<th>학습결과서</th>
+									<th>리셋</th>
+									<th>리셋이력</th>
+									<th>상세이력</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="ac brdN">김대교</td>
+									<td class="ac">1000000879</td>
+									<td class="ac">P4</td>
+									<td class="ac">월2/수</td>
+									<td class="ac">4레벨-1레슨</td>
+									<td class="ac">20-02-10</td>
+									<td class="ac">51분</td>
+									<td class="ac"><span class="txt_red txt_strong">88점</span></td>
+									<td class="ac"><button class="btn_green02_M" onclick="location.href='coaching.html'">1:1코칭</button></td>
+									<td class="ac"><button class="btn_reset" onclick="" title="리셋"></button></td>
+									<td class="ac"><button class="btn_black_XS" onclick="popupS('#popup02','show','600','auto');">1회</button></td>
+									<td class="ac"><button class="btn_black_M" onclick="location.href='edu_info.html'">상세이력</button></td>
+								</tr>
+								<tr>
+									<td class="ac brdN">김대교</td>
+									<td class="ac">1000000879</td>
+									<td class="ac">P4</td>
+									<td class="ac">월2/수</td>
+									<td class="ac">4레벨-1레슨</td>
+									<td class="ac">20-02-10</td>
+									<td class="ac">51분</td>
+									<td class="ac"><span class="txt_red txt_strong">88점</span></td>
+									<td class="ac"><button class="btn_green02_M" onclick="location.href='coaching.html'">1:1코칭</button></td>
+									<td class="ac"><button class="btn_reset" onclick="" title="리셋"></button></td>
+									<td class="ac"><button class="btn_black_XS" onclick="popupS('#popup02','show','600','auto');">1회</button></td>
+									<td class="ac"><button class="btn_black_M" onclick="location.href='edu_info.html'">상세이력</button></td>
+								</tr>
+								<tr>
+									<td class="ac brdN">김대교</td>
+									<td class="ac">1000000879</td>
+									<td class="ac">P4</td>
+									<td class="ac">월2/수</td>
+									<td class="ac">4레벨-1레슨</td>
+									<td class="ac">20-02-10</td>
+									<td class="ac">51분</td>
+									<td class="ac"><span class="txt_red txt_strong">88점</span></td>
+									<td class="ac"><button class="btn_green02_M" onclick="location.href='coaching.html'">1:1코칭</button></td>
+									<td class="ac"><button class="btn_reset" onclick="" title="리셋"></button></td>
+									<td class="ac"><button class="btn_black_XS" onclick="popupS('#popup02','show','600','auto');">1회</button></td>
+									<td class="ac"><button class="btn_black_M" onclick="location.href='edu_info.html'">상세이력</button></td>
+								</tr>
+								<!-- noData
 									<tr>
-										<th class="sorting">이름</th>
-										<th class="sorting active">회원번호</th>
-										<th class="sorting">학년</th>
-										<th>방문요일</th>
-										<th class="sorting">최근학습</th>
-										<th>학습완료일</th>
-										<th>학습시간</th>
-										<th>점수</th>
-										<th>학습결과서</th>
-										<th>리셋</th>
-										<th>리셋이력</th>
-										<th>상세이력</th>
+										<td colspan="12">
+											<div class="noData">
+												<span class="ico"></span>오늘 방문 회원이 없습니다.
+											</div>
+										</td>
 									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td class="ac brdN">김대교</td>
-										<td class="ac">1000000879</td>
-										<td class="ac">P4</td>
-										<td class="ac">월2/수</td>
-										<td class="ac">4레벨-1레슨</td>
-										<td class="ac">20-02-10</td>
-										<td class="ac">51분</td>
-										<td class="ac"><span class="txt_red txt_strong">88점</span></td>
-										<td class="ac"><button class="btn_green02_M" onclick="location.href='coaching.html'">1:1코칭</button></td>
-										<td class="ac"><button class="btn_reset" onclick="" title="리셋"></button></td>
-										<td class="ac"><button class="btn_black_XS" onclick="popupS('#popup02','show','600','auto');">1회</button></td>
-										<td class="ac"><button class="btn_black_M" onclick="location.href='edu_info.html'">상세이력</button></td>
-									</tr>
-									<tr>
-										<td class="ac brdN">김대교</td>
-										<td class="ac">1000000879</td>
-										<td class="ac">P4</td>
-										<td class="ac">월2/수</td>
-										<td class="ac">4레벨-1레슨</td>
-										<td class="ac">20-02-10</td>
-										<td class="ac">51분</td>
-										<td class="ac"><span class="txt_red txt_strong">88점</span></td>
-										<td class="ac"><button class="btn_green02_M" onclick="location.href='coaching.html'">1:1코칭</button></td>
-										<td class="ac"><button class="btn_reset" onclick="" title="리셋"></button></td>
-										<td class="ac"><button class="btn_black_XS" onclick="popupS('#popup02','show','600','auto');">1회</button></td>
-										<td class="ac"><button class="btn_black_M" onclick="location.href='edu_info.html'">상세이력</button></td>
-									</tr>
-									<tr>
-										<td class="ac brdN">김대교</td>
-										<td class="ac">1000000879</td>
-										<td class="ac">P4</td>
-										<td class="ac">월2/수</td>
-										<td class="ac">4레벨-1레슨</td>
-										<td class="ac">20-02-10</td>
-										<td class="ac">51분</td>
-										<td class="ac"><span class="txt_red txt_strong">88점</span></td>
-										<td class="ac"><button class="btn_green02_M" onclick="location.href='coaching.html'">1:1코칭</button></td>
-										<td class="ac"><button class="btn_reset" onclick="" title="리셋"></button></td>
-										<td class="ac"><button class="btn_black_XS" onclick="popupS('#popup02','show','600','auto');">1회</button></td>
-										<td class="ac"><button class="btn_black_M" onclick="location.href='edu_info.html'">상세이력</button></td>
-									</tr>
-									<!-- noData
-										<tr>
-											<td colspan="12">
-												<div class="noData">
-													<span class="ico"></span>오늘 방문 회원이 없습니다.
-												</div>
-											</td>
-										</tr>
-									-->
-								</tbody>
-							</table>
+								-->
+							</tbody>
+						</table>
 
-						</div>
-						<!-- EOD : maxScrollBoxIn -->
 					</div>
-					<!-- EOD : maxScrollBox -->
-					<p class="txt_symbol01 txt_gray01"><span>※</span>해당 화면에서 제공되는 학습 이력은 레슨학습 기준입니다.</p>
-					<div class="btn_center mt10"><button class="btn_more" onclick="">더보기</button></div>
-				</section>
-				<!-- EOD : layout_box -->
+					<!-- EOD : maxScrollBoxIn -->
+				</div>
+				<!-- EOD : maxScrollBox -->
+				<p class="txt_symbol01 txt_gray01"><span>※</span>해당 화면에서 제공되는 학습 이력은 레슨학습 기준입니다.</p>
+				<div class="btn_center mt10"><button class="btn_more" onclick="">더보기</button></div>
+			</section>
+			<!-- EOD : layout_box -->
 
 			<!-- popup_layer -->
 			<section class="popup_wrap type02" id="popup01">

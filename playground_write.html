@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>대교 써밋</title>
+	<meta property="og:title" content="test"/>
+	<meta property="og:description" content="test description"/>
+	<meta property="og:image" content="images/test.png"/>
+	<meta property="og:url" content="http://test.test"/>
+	<meta property="og:type" content="website"/>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+	<link href="css/wbCommon.css" rel="stylesheet"/>
+	<link href="css/wbUser.css" rel="stylesheet"/>
+	<link href="css/slick.css" rel="stylesheet"/>
+	<script src="js/jquery-1.7.2.js"></script>
+	<script src="js/jquery-ui-1.8.2.js"></script>
+	<script src="js/wbCommon.js"></script>
+	<script src="js/slick.js"></script>
+	<!-- 파비콘 <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"> -->
+	<!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+		<script src="js/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<!-- topLayoutInclude -->
+	<section class="headerInclude"></section>
+	<!-- EOD : topLayoutInclude -->
+
+	<!-- member_info -->
+	<section class="member_info"></section>
+	<!-- EOD : member_info -->
+
+	<!-- mainContent -->
+	<section class="mainContent">
+		<!-- mainContentIn -->
+		<div class="mainContentIn">
+			<!-- layout_box -->
+			<section class="layout_box">
+				<h2 class="mt10 mb15">한글 놀이터 결과</h2>
+
+				<!-- maxScrollBox -->
+				<div class="maxScrollBox">
+					<!-- maxScrollBoxIn -->
+					<div class="maxScrollBoxIn">
+						<table class="table_brdN">
+							<caption>구분,과정명,학습일,학습시간,풀이화면으로 구성된 한글 놀이터 결과 상세</caption>
+							<colgroup>
+								<col width="13%">
+								<col width="*">
+								<col width="15%">
+								<col width="10%">
+								<col width="15%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>구분</th>
+									<th class="al">과정명</th>
+									<th>학습일</th>
+									<th>학습시간</th>
+									<th>풀이화면</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="active">
+									<td class="ac">쓰기연습</td>
+									<td>1.자음자 따라 쓰기</td>
+									<td class="ac">2020.11.30</td>
+									<td class="ac">00:12:05</td>
+									<td class="ac">
+										<button class="btn_blue_XS" onclick="popupS('#popup01','show','600','auto');">풀이화면</button>
+									</td>
+								</tr>
+								<tr>
+									<td class="ac">쓰기연습</td>
+									<td>처음만들기</td>
+									<td class="ac">2020.11.30</td>
+									<td class="ac">00:12:05</td>
+									<td class="ac">
+										<button class="btn_blue_XS" onclick="popupS('#popup01','show','600','auto');">풀이화면</button>
+									</td>
+								</tr>					
+								<!--
+								<tr>
+									<td colspan="7">
+										<div class="noData">
+											<span class="ico"></span>한글 놀이터 결과가 없습니다.
+										</div>
+									</td>
+								</tr>
+								-->
+							</tbody>
+						</table>
+					</div>
+					<!-- EOD : maxScrollBoxIn -->
+				</div>
+				<!-- EOD : maxScrollBox -->
+				<div class="btn_center"><button class="btn_more" onclick="">더보기</button></div>
+
+			</section>
+			<!-- EOD : layout_box -->
+		</div>
+		<!-- EOD : mainContentIn -->
+	</section>
+	<!-- EOD : mainContent -->
+
+	<!-- popup_layer -->
+	<section class="popup_wrap type02" id="popup01">
+		<!-- popup_Box -->
+		<div class="popup_Box">
+			<!-- popup_BoxIn -->
+			<div class="popup_BoxIn">
+				<div class="popupH">풀이화면<a href="javascript:void(0);" class="popup_close" onclick="popupS('#popup01','close');"><img src="images/icon_windowPop_close.png" alt="닫기"></a></div>
+				<!-- popupCBox -->
+				<div class="popupCBox">
+					<!-- popupCBoxIn -->
+					<div class="popupCBoxIn">
+						<!-- explan_info -->
+						<div class="explan_info write">
+							<div class="explan_infoL">
+								쓰기연습
+							</div>
+							<!-- explan_infoR -->
+							<div class="explan_infoR">
+								<!-- maxScrollBox -->
+								<div class="maxScrollBox">
+									<ul class="explan_list">
+										<li class="active">
+											<a href="javascript:void(0);">
+												<span class="num">1</span>
+												<span class="info"><span class="icon_answer01">정답</span></span>
+											</a>
+										</li>			
+										<li>
+											<a href="javascript:void(0);">
+												<span class="num">2</span>
+												<span class="info"><span class="icon_answer01">정답</span></span>
+											</a>
+										</li>
+			
+										<li>
+											<a href="javascript:void(0);">
+												<span class="num">3</span>
+												<span class="info"><span class="icon_answer01">정답</span></span>
+											</a>
+										</li>
+			
+										<li>
+											<a href="javascript:void(0);">
+												<span class="num">4</span>
+												<span class="info"><span class="icon_answer02">오답</span></span>
+											</a>
+										</li>
+			
+										<li>
+											<a href="javascript:void(0);">
+												<span class="num">5</span>
+												<!-- 2020.06.19 수정요청사항 반영 -->
+												<span class="info"><span class="icon_answer03">고친 문제</span></span>
+												<!-- EOD : 2020.06.19 수정요청사항 반영 -->
+											</a>
+										</li>
+			
+										<li>
+											<a href="javascript:void(0);">
+												<span class="num">6</span>
+												<span class="info"><span class="icon_answer02">오답</span></span>
+											</a>
+										</li>
+			
+										<li>
+											<a href="javascript:void(0);">
+												<span class="num">7</span>
+												<span class="info"><span class="icon_answer01">정답</span></span>
+											</a>
+										</li>
+			
+										<li>
+											<a href="javascript:void(0);">
+												<span class="num">8</span>
+												<span class="info"><span class="icon_answer01">정답</span></span>
+											</a>
+										</li>
+
+										<li>
+											<a href="javascript:void(0);">
+												<span class="num">9</span>
+												<span class="info"><span class="icon_answer01">정답</span></span>
+											</a>
+										</li>
+
+										<li>
+											<a href="javascript:void(0);">
+												<span class="num">10</span>
+												<span class="info"><span class="icon_answer01">정답</span></span>
+											</a>
+										</li>
+
+										<li>
+											<a href="javascript:void(0);">
+												<span class="num">11</span>
+												<span class="info"><span class="icon_answer01">정답</span></span>
+											</a>
+										</li>
+
+									</ul>
+									<div class="explan_bg"></div>
+								</div>
+								<!-- EOD : maxScrollBox -->
+							</div>
+							<!-- EOD : explan_infoR -->
+						</div>
+						<!-- EOD : explan_info -->
+
+						<div class="explan_detail">
+							<div class="problem_list write">
+								<ul>							
+									<li>
+										<div class="problem_listBox h-auto">
+											<div class="problem_listIn">
+												<span class="problem_title01">문제</span>
+												<p class="problem_question">다음 자음을 바로 작성하세요. 문제 두줄테스트 문제 두줄테스트 문제 두줄테스트</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="problem_listBox answer">
+											<div class="problem_listIn">
+												<span class="problem_title01">학생 답</span>	
+												<div class="answer_img">
+													<img src="../images/usr_explan_answer.png" alt="">
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							
+							<script>
+				
+								$(".explan_list a").on("click",function(index){
+									idx = $(this).parent().index() + 1;
+									$(".explan_list li").removeClass("active")
+									$(this).parent().addClass("active");
+								});
+				
+							</script>
+						</div>
+
+					</div>
+					<!-- EOD : popupCBoxIn -->
+				</div>
+				<!-- EOD : popupCBox -->
+				<div class="popupF">
+					<button type="button" class="btn_black_L" onclick="popupS('#popup01','close');">닫기</button>
+				</div>
+			</div>
+			<!-- EOD : popup_BoxIn -->
+		</div>
+		<!-- EOD : popup_Box -->
+		<div class="popup_bg" onclick="popupS('#popup01','close');"></div>
+	</section>
+	<!-- EOD : popup_layer -->
+
+	<!-- footerInclude -->
+	<section class="footerInclude"></section>
+	<!-- EOD : footerInclude -->
+</body>
+</html>
